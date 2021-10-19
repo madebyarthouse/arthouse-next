@@ -8,6 +8,8 @@
 - ESLint + Prettier
 - Configured VSCode
 - Pre-Commit linter via Husky
+- Webpack Bundle Analzyer
+- Next.js Bundle Analysis Github Action
 - Yarn
 
 Todo:
@@ -51,6 +53,14 @@ CSS Reset
 Explain:
 .vscode/extensions.json
 .vscode/settings.json
+
+## Bundle Analysis
+
+- Webpack
+- Next.js
+
+From https://github.com/hashicorp/nextjs-bundle-analysis:
+Since this plugin works by comparing the base bundle against each PR, the first time it is run, it will fail since it has no base to compare against. This is expected - ideally you can just commit the changes directly to your default branch, where it will run to generate the base bundle, then anything that branches off after that will have a valid comparison point and the script will work as expected.
 
 ## License
 
